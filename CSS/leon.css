@@ -29,6 +29,32 @@
       width: 1170px;
    }
 }
+   .spaical-heading {
+      color: #f6f6f6;
+      font-size: 100px;
+      text-align: center;
+      font-weight: 800;
+      letter-spacing: -3px;
+      margin: 0;
+      
+   }
+   .spaical-heading + p{
+      color: #575757;
+      font-weight: 500;
+      text-align: center;
+      font-size: 15px;
+      margin: -30px 0 0;
+
+   }
+   @media (max-width:767px){
+      .spaical-heading{
+       font-size: 60px;
+      }
+      .spaical-heading + p{
+       font-size: 10px;
+       margin: -18px 0 0;
+      }
+   }
 .header{
    padding :20px;
 }
@@ -170,3 +196,241 @@ padding-top: 60px;
    color: #777;
    font-size: 17px;
 }
+.services {
+padding-top: 20px;   
+padding-bottom: 20px;
+}
+.services .container .spaical-content  {
+   display: grid;
+   grid-template-columns : repeat(auto-fill , minmax(350px,1fr)) ;
+   grid-gap:30px;
+   margin-top: 80px; 
+}
+.services .spaical-content .srv{
+margin-bottom: 40px;
+}
+.services .logo {
+   width: 50px;
+   height: 50px;
+} 
+
+   @media (max-width:767px){
+      .services .spaical-content .srv{
+         text-align: center;
+         flex-direction: column;
+      }
+   }
+      .services .srv .text {
+         flex: 1;
+      }
+      
+      .services .srv .text h4 {
+      margin: 0 0 30px;
+      
+      }
+      
+      .services .srv .text p{
+      color: #444;
+      font-weight: 300;
+      line-height: 1.6 ;
+      }
+      .services .spaical-content .image{
+         text-align: center;
+         position: relative;
+         z-index: 1;
+      }
+      .services .spaical-content .image::before{
+         content: "";
+         background-color: #2c4755;
+         width: 150px;
+         height: 420px;
+         position: absolute;
+         bottom: 80px;
+         right:3px;
+         z-index: -1;
+      }
+      .services .spaical-content .image img{
+         width: 350px;
+         height: 350px;
+         position: absolute;
+         left: 0;
+      }
+      @media (max-width:1199px){
+         .image{
+            display: none;
+         }
+
+      }
+      .portfolio{
+         padding-top:20px ;
+         padding-bottom:20px ;
+      }
+      .portfolio .container .spaical-content {
+         display: grid;
+         grid-template-columns : repeat(auto-fill , minmax(350px,1fr)) ;
+         grid-gap:30px;
+         margin-top: 80px;
+         justify-content: center;
+
+      }
+      .portfolio .container .spaical-content .port {
+      background-color: white;
+      }
+
+      .portfolio .imag img{
+        max-width: 100%;
+      }
+      .portfolio .port {
+         box-shadow: 1px 1px 3px black;
+         box-sizing: 0 0 10px;
+      }
+      .portfolio .text {
+         text-align: left;
+         padding-left: 20px;
+         padding-right: 20px;
+         margin: 0;
+      }
+      .portfolio .text h3{
+      font-size: 20px;
+      font-weight: 800;   
+      }
+      .portfolio .text p {
+         font-size: 15px;
+         font-weight: 300;
+         line-height: 1.8;   
+         }
+      .about{
+         padding-top: 60px;
+         padding-bottom: 60px
+      }
+      .about .container .spaical-content{
+         display: grid;
+         grid-template-columns : repeat(auto-fill , minmax(350px,1fr)) ;
+         grid-gap:80px;
+         margin-top: 100px;
+
+
+      }
+      @media(max-width:991px){
+         .about .container .spaical-content{
+            flex-direction: row;
+            text-align: center;
+         }
+      }
+      .about .container .spaical-content .imag {
+         text-align: left;
+         position: relative;
+      }
+      @media(max-width:991px){
+         .about .container .spaical-content .imag img{
+            margin-left: 50px;
+         }
+      }
+      .about .container .spaical-content .imag img{
+         width: 400px;
+         height: 400px;
+         display: flex;
+         position: relative;
+      }
+
+      .about .container .spaical-content .text p1{
+         font-size: 20px;
+         font-weight: 800;
+         text-align: left;
+         line-height: 2.0;
+
+      }
+      .about .container .spaical-content .text hr{
+         margin-top: 80px;
+         color: #10cab7;
+         
+      }
+
+      .about .container .spaical-content .text p2{
+         font-size: 15px;
+         font-weight: 300;
+         line-height: 2.0;
+         text-align: left;
+         color: #777;
+         
+      }
+      
+      .about .container .spaical-content .imag::before{
+         content: "";
+         background-color:#f6f6f6;
+         position: absolute;
+         width: 100px;
+         height: 500px;
+         left:0px;
+         bottom: -45px;
+         z-index: -1;
+      }
+      .about .container .spaical-content .imag::after{
+         content: "";
+         position: absolute;
+         width: 120px;
+         height: 300px;
+         border-left:80px solid #10cab7;
+         border-bottom:80px solid #10cab7;
+         right: -30px;
+         bottom: 40px;
+         z-index: -1;
+      }
+      @media(max-width:991px){
+         .about .container .spaical-content .imag::before{
+            display: none;
+         }
+         .about .container .spaical-content .imag::after{
+            display: none;
+         }
+
+      }
+      .contact{
+         padding-top: 60px;
+         padding-bottom: 120px;
+         text-align: center;
+      }
+      .contact .container .cont .lable {
+      font-size: 55px;
+      font-weight:bolder;
+      color: #2c4755;
+      letter-spacing: -3px;
+      }
+      .contact .container .cont a {
+      font-size: 50px;
+      font-weight: 800;
+      color: #10cab7;
+      letter-spacing: -3px;
+
+      }
+      .contact .container .cont .social {
+         font-size: 15px;     
+         color: #334752;
+         margin-top: 30px;
+         display: flex;
+         justify-content: center;
+
+      }
+      @media(max-width:720px){
+         .contact .container .cont .lable,.contact .container .cont a{
+            font-size: 30px;
+         }
+      }
+      .contact .container .cont .social i {
+         margin-left:10px ;
+
+      }
+
+
+      .footer{
+         padding: 40px;
+         background-color: #2c4755;
+         text-align: center;
+
+         font-size: 20px;         
+         color: white;
+      }
+      .footer span{
+         color: #10cab7;
+      }
+   
